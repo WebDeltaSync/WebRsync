@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5-els.js"></script>
+    <![endif]-->
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="application/javascript" src="/js/md5.js"></script>
+    <script type="application/javascript" src="/js/socket.io-1.4.5.js"></script>
+    <script type="application/javascript" src="/js/jquery-1.11.1.js"></script>
+    <script type="application/javascript" src="/js/bit-sync.js"></script>
+    <script type="application/javascript" src="/js/sync-client.js"></script>
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+  </head>
+  <body>
+  <style>
+    #byte_content {
+      margin: 5px 0;
+      max-height: 100px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    #byte_range { margin-top: 5px; }
+  </style>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <span>
+      <input type="file" id="files" name="file" />
+      <button onclick="start_rsync()">rsync</button>
+    </span>
+  <p><span id="result"></span></p>
+
+  <p><button onclick="start_test()">测试</button></p>
+
+  <!--<form ref='uploadForm'-->
+        <!--id='uploadForm'-->
+        <!--action='/upload'-->
+        <!--method='post'-->
+        <!--encType="multipart/form-data">-->
+    <!--<input type="file" name="sampleFile" />-->
+    <!--<input type='submit' value='直接上传' />-->
+  <!--</form>-->
+
+  </body>
+</html>
