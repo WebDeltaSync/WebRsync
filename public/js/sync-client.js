@@ -21,7 +21,7 @@ var checksum_timetamp;
 var test_start_time = (new Date()).getTime();
 var traffic;
 
-var socket = io.connect('http://localhost:8081');
+var socket = io.connect('http://'+window.location.hostname+':8081');
 socket.on('SyncOver',function(req){
     lock = true;
     // current_file = null;
