@@ -19,7 +19,7 @@ Pure Javascript Implementation of rsync.
 >> 
 >> \>\> node bin/www
 >> 
->> \>\> Now ,visit http://localhost:3000 on your browser
+>> \>\> Now ,visit localhost:8080 on your browser
 
 ## Document
 > Javascript Implementation of rsync algorithm: WebRsync/blob/master/public/js/bit-sync.js
